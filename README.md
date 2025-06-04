@@ -51,8 +51,9 @@ my-nextjs-demo/
 Architecture and technical explanation are documented under the [`/docs`](./docs/) folder. Recommended reading:
 
 * [`docs/01-architecture-overview.md`](./docs/01-architecture-overview.md)
-* [`docs/02-store-testing.md`](./docs/02-store-testing.md) *(coming soon)*
-* [`docs/03-ci-pipeline.md`](./docs/03-ci-pipeline.md) *(coming soon)*
+* [`docs/02-store-testing.md`](./docs/02-store-testing.md) 
+* [`docs/03-writing-testable-code.md`](./docs/03-writing-testable-code.md)
+* [`docs/04-ci-cd-setup.md`](./docs/04-ci-cd-setup.md)
 
 ## 🛆 Deployment
 
