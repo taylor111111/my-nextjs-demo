@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# my-nextjs-demo
 
-## Getting Started
+A production-ready **Next.js 15 (App Router)** demo showcasing modular frontend architecture, CI/CD, type safety, and testability — built for engineers aiming at mid-to-senior level excellence.
 
-First, run the development server:
+## 🔧 Tech Stack
+
+| Category         | Stack                        |
+| ---------------- | ---------------------------- |
+| Framework        | Next.js 15 (App Router)      |
+| Language         | TypeScript                   |
+| State Management | Redux Toolkit                |
+| Styling          | Tailwind CSS                 |
+| Testing          | Jest + React Testing Library |
+| CI/CD            | GitHub Actions + Vercel      |
+| Linting & Format | ESLint, Prettier             |
+
+## 📁 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+my-nextjs-demo/
+├── app/                    # Next.js App Router pages/layouts
+├── components/             # Reusable UI components
+├── store/                  # Redux store and slices
+├── tests/                  # Unit and integration tests
+├── docs/                   # Architecture and design documentation
+├── .github/workflows/      # CI pipelines (lint, test, build)
+├── public/                 # Static assets
+├── tsconfig.json           # TypeScript config (with path aliases)
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Command      | Description          |
+| ------------ | -------------------- |
+| `yarn dev`   | Run local dev server |
+| `yarn lint`  | Run ESLint check     |
+| `yarn test`  | Run unit tests       |
+| `yarn build` | Build the app        |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✅ Features
 
-## Learn More
+* ✅ **App Router Architecture** — Clean modular file-based routing
+* ✅ **Global State** — Scalable Redux Toolkit with logic/UI separation
+* ✅ **Full CI Pipeline** — GitHub Actions auto-test/build/deploy
+* ✅ **Test Coverage** — Isolated logic + UI testing with RTL
+* ✅ **Clean Lint & Type Checks** — Ensures consistency and correctness
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Architecture and technical explanation are documented under the [`/docs`](./docs/) folder. Recommended reading:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* [`docs/01-architecture-overview.md`](./docs/01-architecture-overview.md)
+* [`docs/02-store-testing.md`](./docs/02-store-testing.md) *(coming soon)*
+* [`docs/03-ci-pipeline.md`](./docs/03-ci-pipeline.md) *(coming soon)*
 
-## Deploy on Vercel
+## 🛆 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is auto-deployed to [Vercel](https://vercel.com/) via GitHub Actions when pushing to `main`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧪 CI Status
+
+![CI](https://github.com/your-username/my-nextjs-demo/actions/workflows/ci.yml/badge.svg)
+
+## 👤 Author
+
+Taylor / [@taylor111111](https://github.com/taylor111111)
+
+---
+
+Feel free to fork, use, or reference this project in job applications, blogs, or tech talks.
