@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",         // ✅ 用于 jest 编译 JSX
+    "module": "commonjs",       // ✅ Jest 需要 commonjs 而不是 esnext
+    "moduleResolution": "node",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "noEmit": true
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}

@@ -1,72 +1,43 @@
-# my-nextjs-demo
+# 📘 文档总览（中文）
 
-A production-ready **Next.js 15 (App Router)** demo showcasing modular frontend architecture, CI/CD, type safety, and testability — built for engineers aiming at mid-to-senior level excellence.
+本项目旨在展示一个基于 **Next.js 15 + Redux Toolkit + TailwindCSS + styled-components + Jest + GitHub Actions + Vercel** 构建的中高级前端工程师通用架构，支持模块化、测试驱动、自动部署，并注重代码质量与开发体验。
 
-## 🔧 Tech Stack
-
-| Category         | Stack                        |
-| ---------------- | ---------------------------- |
-| Framework        | Next.js 15 (App Router)      |
-| Language         | TypeScript                   |
-| State Management | Redux Toolkit                |
-| Styling          | Tailwind CSS                 |
-| Testing          | Jest + React Testing Library |
-| CI/CD            | GitHub Actions + Vercel      |
-| Linting & Format | ESLint, Prettier             |
-
-## 📁 Project Structure
-
-```bash
-my-nextjs-demo/
-├── app/                    # Next.js App Router pages/layouts
-├── components/             # Reusable UI components
-├── store/                  # Redux store and slices
-├── tests/                  # Unit and integration tests
-├── docs/                   # Architecture and design documentation
-├── .github/workflows/      # CI pipelines (lint, test, build)
-├── public/                 # Static assets
-├── tsconfig.json           # TypeScript config (with path aliases)
-└── ...
-```
-
-## 🚀 Scripts
-
-| Command      | Description          |
-| ------------ | -------------------- |
-| `yarn dev`   | Run local dev server |
-| `yarn lint`  | Run ESLint check     |
-| `yarn test`  | Run unit tests       |
-| `yarn build` | Build the app        |
-
-## ✅ Features
-
-* ✅ **App Router Architecture** — Clean modular file-based routing
-* ✅ **Global State** — Scalable Redux Toolkit with logic/UI separation
-* ✅ **Full CI Pipeline** — GitHub Actions auto-test/build/deploy
-* ✅ **Test Coverage** — Isolated logic + UI testing with RTL
-* ✅ **Clean Lint & Type Checks** — Ensures consistency and correctness
-
-## 📄 Documentation
-
-Architecture and technical explanation are documented under the [`/docs`](./docs/) folder. Recommended reading:
-
-* [`docs/01-architecture-overview.md`](./docs/01-architecture-overview.md)
-* [`docs/02-store-testing.md`](./docs/02-store-testing.md) 
-* [`docs/03-writing-testable-code.md`](./docs/03-writing-testable-code.md)
-* [`docs/04-ci-cd-setup.md`](./docs/04-ci-cd-setup.md)
-
-## 🛆 Deployment
-
-This project is auto-deployed to [Vercel](https://vercel.com/) via GitHub Actions when pushing to `main`.
-
-## 🧪 CI Status
-
-![CI](https://github.com/your-username/my-nextjs-demo/actions/workflows/ci.yml/badge.svg)
-
-## 👤 Author
-
-Taylor / [@taylor111111](https://github.com/taylor111111)
+以下为文档内容索引，建议按顺序阅读。
 
 ---
 
-Feel free to fork, use, or reference this project in job applications, blogs, or tech talks.
+## 🧱 架构设计
+
+* [01 - 架构总览](./docs/01-architecture-overview.md)
+
+## 🧪 测试体系
+
+* [02 - Redux Store 测试：逻辑与 UI 解耦](./docs/02-store-testing.md)
+* [03 - 编写可测试的 JavaScript 代码：原则与实战](./docs/03-writing-testable-code.md)
+
+## ⚙️ 工程实践
+
+* [04 - 使用 Styled-Components 实现可维护的样式管理](./docs/05-styling-with-styled-components.md)
+* [05 - CI/CD 设置指南：GitHub Actions + Vercel 自动部署](./docs/04-ci-cd-setup.md)
+
+---
+
+## 📂 多语言版本
+
+每篇文档均提供英文版本，位于同名 `*-en.md` 文件中。例如：
+
+* [01-architecture-overview-en.md](./docs/01-architecture-overview-en.md)
+* [02-store-testing-en.md](./docs/02-store-testing-en.md)
+* [03-writing-testable-code-en.md](./docs/03-writing-testable-code-en.md)
+* [04-ci-cd-setup-en.md](./docs/04-ci-cd-setup-en.md)
+* [05-styling-with-styled-components.en.md](./docs/05-styling-with-styled-components.en.md)
+
+---
+
+## 📎 项目仓库
+
+GitHub 地址：[https://github.com/taylor111111/my-nextjs-demo](https://github.com/taylor111111/my-nextjs-demo)
+
+---
+
+如需英文版本 README，请阅读：[`README.md`](./README-en.md)

@@ -2,6 +2,13 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState, AppDispatch } from '@/store'
 import { login, logout } from '@/store/userSlice'
+import styled from 'styled-components';
+import StyledButton from '@/components/StyledButton';
+
+const Title = styled.h1`
+  color: hotpink;
+  font-size: 32px;
+`;
 
 export default function HomePage() {
   const user = useSelector((state: RootState) => state.user)
@@ -9,6 +16,7 @@ export default function HomePage() {
 
   return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-blue-100">
+
         <h1 className="text-4xl font-bold mb-4">Redux Toolkit 测试</h1>
         {user.isLoggedIn ? (
             <div>
@@ -28,6 +36,8 @@ export default function HomePage() {
               登录
             </button>
         )}
+          <Title>Hello styled-components!</Title>
+          <StyledButton onClick={() => alert('Clicked!')}>Click Me</StyledButton>
       </div>
   )
 }

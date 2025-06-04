@@ -11,4 +11,8 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/$1', // 指向项目根目录
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
+  transform: {
+    // '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.json' }],
+    '^.+\\.(ts|tsx)$': ['ts-jest', { tsconfig: 'tsconfig.jest.json' }],
+  },
 }
