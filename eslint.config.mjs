@@ -19,7 +19,8 @@ const eslintConfig = [
   {
     rules: {
       // 你的自定义规则
-      // 例如 "react/react-in-jsx-scope": "off" (因为 Next.js 自动导入 React)
+      //  "react/react-in-jsx-scope": "off" (因为 Next.js 自动导入 React)
+      'react/react-in-jsx-scope': 'off',
     },
   },
 ];
