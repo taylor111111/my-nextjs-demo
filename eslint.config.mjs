@@ -10,7 +10,18 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...compat.extends(
+      "next/core-web-vitals",
+      "next/typescript",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended"
+  ),
+  {
+    rules: {
+      // 你的自定义规则
+      // 例如 "react/react-in-jsx-scope": "off" (因为 Next.js 自动导入 React)
+    },
+  },
 ];
 
 export default eslintConfig;
