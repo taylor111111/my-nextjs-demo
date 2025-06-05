@@ -9,6 +9,7 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1', // 指向项目根目录
+    '^@/mocks(.*)$': '<rootDir>/mocks$1',
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
   transform: {

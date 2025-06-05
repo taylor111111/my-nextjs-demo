@@ -6,7 +6,14 @@
     "moduleResolution": "node",
     "allowJs": true,
     "esModuleInterop": true,
-    "noEmit": true
+    "noEmit": true,
+    // paths
+    "baseUrl": ".", // 确保这一项存在
+    "paths": {
+      "@/*": ["./*"],
+      "@/mocks": ["./mocks"]
+    },
+
   },
   "include": ["**/*.ts", "**/*.tsx"]
 }

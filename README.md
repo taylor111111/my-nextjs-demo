@@ -19,6 +19,8 @@
 
 * [04 - 使用 Styled-Components 实现可维护的样式管理](./docs/05-styling-with-styled-components.md)
 * [05 - CI/CD 设置指南：GitHub Actions + Vercel 自动部署](./docs/04-ci-cd-setup.md)
+* [06 - 什么是 BFF？为什么前端需要它](./docs/06-bff-inro.md)
+* [07 - 前端掌握 BFF 能力，带来了什么质变](./docs/07-bff-frontend-evolution.md)
 
 ---
 
